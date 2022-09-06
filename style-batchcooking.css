@@ -1,0 +1,228 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    cursor: pointer;
+}
+body {
+    background-color: rgb(236, 187, 126);
+    height: auto;
+}
+header {
+    background-color: rgba(236, 186, 126);
+    padding-left: 10px;  
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0px 0px 15px 0px #333;
+}
+header a img {
+    display: flex;
+    align-items: left;
+}
+h1 {
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    font-size: 35px;
+    color: rgb(26, 22, 14);
+    margin-left: 10px;
+    height: 40px;
+}
+#encabezado h2 {
+    font-family: 'Rubik', sans-serif;
+    margin-right: 20px;
+}
+#encabezado a:hover {
+    color: rgb(255, 255, 228);
+}
+h2 a{
+    color: rgb(26, 22, 14);
+    text-decoration: none;
+    font-size: 25px;
+}
+#encabezado {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+#encabezado img {
+    width: 80px;
+    height: 80px;
+    margin-left: 75px;
+}
+.fondo {
+    background-color: rgb(8, 8, 8);
+    width: 100%;
+    height: 120px;
+}
+.border {
+    background-color: rgb(252, 233, 172);
+    /* grid-template-columns: 70% 30%;
+    grid-auto-rows: auto; */
+}
+
+
+.calendario {
+    width: 160px;
+    height: 160px;
+}
+.cupcake {
+    width: 230px;
+    height: 160px;
+    /* margin-left: 80px; */
+}
+.reloj {
+    width: 150px;
+    height: 150px;
+}
+#grilla {
+    display: grid;
+    grid-template-areas:
+    "container imagenes"
+    "container imagenes"
+    "adquiere adquiere";
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto 500px;
+}
+section#container {
+    grid-area: container;
+    display: flex;
+    flex-direction: column;
+}
+section#adquiere {
+    grid-area: adquiere;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(252, 233, 172);
+}
+aside#imagenes {
+    grid-area: imagenes;
+    display: flex;
+    flex-direction: column;
+    padding-left: 55px;
+}
+
+
+
+
+
+
+.contacto {
+    text-align: center;
+    background-color: rgb(8, 8, 8);
+    color: rgb(219, 193, 138);
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+}
+.contacto li a {
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+.contacto li a {
+    color: peru;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    header {
+        height: 120px;
+    }
+    h1 {
+        float: left;
+        font-family: 'Rubik', sans-serif;
+        font-size: 35px;
+        color: rgb(26, 22, 14);
+        margin-left: 10px;
+    }
+    #encabezado img {
+        display: block;
+    }
+    #encabezado h2{
+        font-family: 'Rubik', sans-serif;
+        float: right;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+    #encabezado {
+        display: inline;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: normal;
+    }
+    main {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+}
+    h3 {
+    font-size: 25px;
+    margin-left: 44px;
+    margin-bottom: 12px;
+    }
+    span {
+    margin-left: 48px; 
+    font-size: 20px;
+    }
+    p {
+    margin: 12px 10px 12px 150px;
+    }
+    .frase {
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+    margin: 15px 0px 20px 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    }
+    .bold {
+        font-weight: bold;
+    }
+    .adquiere {
+        font-size: 25px;
+        margin-left: 80px;
+        text-align: center;
+    }
+    iframe {
+        margin-left: 30%;
+    }
+    .calendario {
+        width: 160px;
+        height: 160px;
+    }
+    .cupcake {
+        width: 130px;
+        height: 160px;
+    }
+    .reloj {
+        width: 150px;
+        height: 150px;
+    }
+    .ahorra {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    .ahorra span {
+        text-align: center;
+    }
+    .ahorra img {
+        margin-left: 130px;
+    }
+    #adquiere .button {
+        margin-left: 610px;
+        padding: 20px;
+        width: 160px;
+        background-color: rgb(8, 8, 8);
+        color: rgb(252, 233, 172);
+        font-size: 15px;
+        border-radius: 12px;
+    }
+    aside img {
+        margin-left: 40px;
+    }
+}
+@media (min-width: 1200px) {
+    
+}

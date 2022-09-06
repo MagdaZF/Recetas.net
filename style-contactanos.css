@@ -1,0 +1,196 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: rgb(236, 187, 126);
+}
+header {
+    background-color: rgba(8, 8, 8);
+    padding-left: 10px;  
+    height: 120px;
+    width: 768px;
+    position: fixed;
+    z-index: 10;
+    box-shadow: 0px 0px 10px 0px #333;
+}
+header a img{
+    display: flex;
+    align-items: left;
+}
+h1 {
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+#encabezado h2{
+    font-family: 'Rubik', sans-serif;
+    margin-right: 20px;
+}
+#encabezado a:hover{
+    color: rgb(255, 255, 228);
+}
+h2 a {
+    color: rgb(219, 193, 138);
+    text-decoration: none;
+    font-size: 25px;
+    
+}
+#encabezado {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+#encabezado img {
+    width: 80px;
+    height: 80px;
+    margin-left: 75px;
+}
+.fondo {
+    background-color: rgb(8, 8, 8);
+    width: 100%;
+    height: 100px;
+}
+.imagen-ppal img {
+    object-fit: cover;
+    width: 768px;
+    height: 350px;
+}
+
+
+.formulario {
+    font-family: 'Rubik', sans-serif;
+    margin-left: 17px;
+    background-color: rgb(247, 234, 199);
+    border-radius: 18px;
+    height: 500px;
+    width: 420px;
+    padding-left: 30px;
+    padding-top: 20px;
+    box-shadow: 0px 0px 10px 0px #333;
+}
+form > div {
+    margin-top: 8px;
+}
+form input:nth-child(1) {
+    margin-left: 200px;
+}
+.button {
+    background-color: rgb(8, 8, 8);
+    color: aliceblue;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    width: auto;
+    height: 35px;
+    border-radius: 4px;
+}
+::placeholder {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+
+
+.contacto {
+    text-align: center;
+    background-color: rgb(8, 8, 8);
+    color: rgb(219, 193, 138);
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+    display: block;
+    width: 768px;
+}
+.contacto li a {
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+.contacto li a {
+    color: peru;
+    text-decoration: none;
+}
+
+
+.contactanos a:visited {
+    color:darkred;
+}
+iframe {
+    margin-top: 30px;
+    margin-left: 35px;
+    z-index: 0;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .formulario {
+        display: inline-block;
+        margin-left: 25px;
+    }
+    .ubicacion {
+        display: inline-block;
+        position: relative;
+        /* left: 5%; */
+        top: -5px;
+    }
+    .imagen-ppal img {
+        object-fit: cover;
+        width: 100%;
+        height: 350px;
+    }
+    header {
+        height: 120px;
+        width: 100%;
+    }
+    h1 {
+        float: left;
+        font-family: 'Rubik', sans-serif;
+        font-size: 35px;
+        color: rgb(255, 255, 255);
+        margin-left: 10px;
+    }
+    #encabezado img {
+        display: block;
+    }
+    #encabezado h2{
+        font-family: 'Rubik', sans-serif;
+        float: right;
+        margin-right: 20px;
+        margin-top: 8px;
+    }
+    #encabezado {
+        display: inline;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: normal;
+    }
+    .contacto {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    #encabezado h2 {
+        margin-right: 20px;
+    }
+    .formulario {
+        display: inline-block;
+        margin-left: 35px;
+    }
+    .ubicacion {
+        top: -45px;
+        left: 50px;
+    }
+    iframe {
+        width: 600px;
+        height: 400px;
+    }
+    .imagen-ppal img {
+        object-fit: cover;
+        width: 100%;
+        height: 350px;
+    }
+}

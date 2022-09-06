@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(236, 187, 126);
+}
+header{
+    width: 100%;
+    height: 120px;
+    background: rgb(8, 8, 8);
+    color: rgb(248, 242, 213);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0px 0px 10px 0px #333;
+}
+h1{
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    margin: 20px 0px 20px 20px;
+    font-size: 48px;
+}
+.contenedor h2{
+    font-family: 'Rubik', sans-serif;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+h2 a{
+    color: rgb(219, 193, 138);
+    text-decoration: none;
+    font-size: 25px; 
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 120px;
+}
+.contenedor a:hover{
+    color: rgb(255, 255, 228);
+}
+.fondo {
+    background-color: rgb(8, 8, 8);
+    width: 100%;
+    height: 100px;
+}
+
+
+.imagen-ppal img{
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+}
+#Increibles {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    background-color: rgb(252, 238, 192);
+    box-shadow: 0px 0px 10px 0px #333;
+    padding: 8px;
+}
+h3{
+    background-color: rgba(233, 138, 61, 0.315);
+    font-family: 'Rubik', sans-serif;
+    text-align: center; 
+    font-size: 25px;
+    height: 58px;
+}
+.bloques img {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 172px;
+}
+.bloque1 {
+    background-color: rgb(252, 238, 192);
+    width: 300px;
+    height: 350px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px 0px #333;
+}
+.bloque1 p {
+    width: 200px;
+    height: 70px;
+    margin-left: 50px;
+    font-family: 'Rubik', sans-serif;
+}
+.bloques {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+a {
+    text-decoration: none;
+    color: rgb(8, 8, 8)
+}
+
+
+
+.contacto {
+    text-align: center;
+    background-color: rgb(8, 8, 8);
+    color: rgb(219, 193, 138);
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+}
+.contacto li a {
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+.contacto li a {
+    color: peru;
+    text-decoration: none;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .bloques {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .bloque1 {
+        width: 250px;
+        height: 350px;
+        margin-left: 35px;
+        margin-top: 20px;
+    }
+    header {
+        height: 120px;
+    }
+    .bloque1 p {
+        width: 200px;
+        height: 70px;
+        margin-left: 25px;
+    
+    }
+    .contenedor h2{
+        font-family: 'Rubik', sans-serif;
+        float: right;
+        margin-right: 20px;
+    }
+    h1 {
+        margin-bottom: 0px;
+        margin-top: 30px;
+    }
+    .contenedor {
+        display: inline;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: normal;
+    }
+}

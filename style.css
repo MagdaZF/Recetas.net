@@ -1,0 +1,277 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    cursor: pointer;
+}
+body {
+    background-color: rgb(236, 187, 126);
+}
+header {
+    background-color: rgba(236, 186, 126);
+    padding-left: 10px;  
+    height: 140px;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0px 0px 15px 0px #333;
+}
+header a img {
+    display: inline;
+    align-items: left;
+}
+h1 {
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    font-size: 35px;
+    color: rgb(26, 22, 14);
+    margin-left: 10px;
+}
+#encabezado h2 {
+    font-family: 'Rubik', sans-serif;
+    margin-right: 20px;
+}
+#encabezado a:hover {
+    color: rgb(255, 255, 228);
+}
+h2 a{
+    color: rgb(26, 22, 14);
+    text-decoration: none;
+    font-size: 25px;
+}
+#encabezado {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+#encabezado img {
+    width: 80px;
+    height: 80px;
+    margin-left: 75px;
+}
+.fondo {
+    background-color: rgb(8, 8, 8);
+    width: 100%;
+    height: 100px;
+}
+.imagen-ppal img {
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+}
+
+.menu {
+    color: rgb(247, 220, 147);
+    font-size: 25px;
+    list-style-type: none;
+    text-align: center;
+    background-color: rgb(102, 58, 28);
+    box-shadow: 0px 0px 10px 0px #333;
+}
+.menu li {
+    display: inline-block;
+}
+.menu li a {
+    background-color: rgb(236, 187, 126);
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    padding: 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.menu li a:link {
+    color: rgb(32, 18, 10);
+    font-size: 25px;
+}
+.menu li a:hover {
+    background-color: rgb(252, 236, 166);
+}
+.menu li a {
+    float: left;
+    background-position: center center;
+}
+.menu :visited {
+    color:black;
+}
+
+
+
+
+.mas-vistas {
+    background-color: rgba(233, 138, 61, 0.315);
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    text-align: center;
+    height: 1600px;
+}
+h2 { 
+    font-size: 35px;
+}
+.bloque1 {
+    background-color: rgb(252, 238, 192);
+    width: 300px;
+    height: 350px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 0px #333;
+}
+.bloque1 a {
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+}
+.mas-vistas img {
+    width: 100%;
+    height: 185px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.mas-vistas p {
+    width: 200px;
+    height: 70px;
+    margin-left: 50px;
+}
+.bloques {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cursos {
+    background-color: rgb(252, 238, 192);
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    text-align: center;
+    height: 1600px;
+}
+.bloque2 {
+    background-color: rgb(236, 187, 126);
+    width: 300px;
+    height: 350px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 0px #333;
+}
+.bloque2 a {
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+}
+.cursos img {
+    width: 100%;
+    height: 185px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.cursos p {
+    width: 200px;
+    height: 70px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.bloques2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+h3 {
+    background-color: rgba(233, 138, 61, 0.315);
+    font-family: 'Rubik', sans-serif;
+    text-align: center; 
+    font-size: 25px;
+}
+
+
+.contacto {
+    text-align: center;
+    background-color: rgb(8, 8, 8);
+    color: rgb(219, 193, 138);
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+}
+.contacto li a {
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+.contacto li a {
+    color: peru;
+    text-decoration: none;
+}
+
+
+
+@media (min-width: 768px) {
+    .mas-vistas {
+        height: 870px;
+    }
+    .cursos {
+        height: 870px;
+    }
+    .bloques {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .bloques2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .bloque1 {
+        width: 250px;
+        height: 350px;
+        margin-left: 35px;
+        margin-top: 20px;
+    }
+    .mas-vistas p {
+        width: 200px;
+        height: 70px;
+        margin-left: 25px;
+    }
+    .bloque2 {
+        width: 250px;
+        height: 350px;
+        margin-left: 35px;
+        margin-top: 20px;
+    }
+    .cursos p {
+        width: 200px;
+        height: 70px;
+        margin-left: 25px;
+    }
+    header {
+        height: 120px;
+    }
+    h1 {
+        float: left;
+        font-family: 'Rubik', sans-serif;
+        font-size: 35px;
+        color: rgb(26, 22, 14);
+        margin-left: 10px;
+    }
+    #encabezado img {
+        display: block;
+    }
+    #encabezado h2{
+        font-family: 'Rubik', sans-serif;
+        float: right;
+        margin-right: 20px;
+    }
+    #encabezado {
+        display: inline;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: normal;
+    }
+}
+@media (min-width: 1200px) {
+    .mas-vistas {
+        height: 500px;
+    }
+    .cursos {
+        height: 500px;
+    }
+}
+
