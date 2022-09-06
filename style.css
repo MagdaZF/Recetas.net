@@ -185,7 +185,10 @@ h3 {
 
 
 .contacto {
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    /* flex-direction: row;
+    text-decoration: none; */
     background-color: rgb(8, 8, 8);
     color: rgb(219, 193, 138);
     font-size: 22px;
@@ -198,6 +201,8 @@ h3 {
 .contacto li a {
     color: peru;
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
 }
 
 
