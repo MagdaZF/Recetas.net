@@ -269,6 +269,7 @@ h3 {
     }
     .contacto span {
         display: block;
+        font-size: 26px;
     }
     .contacto ul {
         display: flex;
@@ -276,6 +277,7 @@ h3 {
         justify-content: space-around;
         list-style: none;
         margin-top: 30px; 
+        font-size: 22px;
     }
 }
 @media (min-width: 1200px) {
