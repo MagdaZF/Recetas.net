@@ -204,7 +204,7 @@ h3 {
     flex-direction: row;
 }
 /* este es un comentario */
-
+/*comentario2*/
 
 @media (min-width: 768px) {
     .mas-vistas {
