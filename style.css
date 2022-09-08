@@ -263,6 +263,20 @@ h3 {
         flex-wrap: nowrap;
         align-content: normal;
     }
+    .contacto {
+        height: 140px;
+        padding: 18px;
+    }
+    .contacto span {
+        display: block;
+    }
+    .contacto ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        margin-top: 30px; 
+    }
 }
 @media (min-width: 1200px) {
     .mas-vistas {
