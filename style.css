@@ -9,7 +9,7 @@ body {
     background-color: rgb(236, 187, 126);
 }
 header {
-    background-color: rgba(236, 186, 126);
+    background-color: rgba(252, 238, 192, 0.988);
     padding-left: 10px;  
     height: 140px;
     width: 100%;
@@ -32,7 +32,7 @@ h1 {
     margin-right: 20px;
 }
 #encabezado a:hover {
-    color: rgb(255, 255, 228);
+    color: rgb(175, 119, 45);
 }
 h2 a{
     color: rgb(26, 22, 14);
@@ -73,7 +73,7 @@ h2 a{
     display: inline-block;
 }
 .menu li a {
-    background-color: rgb(236, 187, 126);
+    background-color: rgba(252, 238, 192);
     font-family: 'Rubik', sans-serif;
     text-decoration: none;
     padding: 20px;
@@ -85,7 +85,7 @@ h2 a{
     font-size: 25px;
 }
 .menu li a:hover {
-    background-color: rgb(252, 236, 166);
+    background-color: rgb(245, 200, 141);
 }
 .menu li a {
     float: left;

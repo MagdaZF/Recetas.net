@@ -10,7 +10,7 @@ body {
     height: auto;
 }
 header {
-    background-color: rgba(236, 186, 126);
+    background-color: rgba(8, 8, 8);
     padding-left: 10px;  
     height: 120px;
     width: 100%;
@@ -25,19 +25,20 @@ h1 {
     display: flex;
     font-family: 'Rubik', sans-serif;
     font-size: 35px;
-    color: rgb(26, 22, 14);
+    color: rgb(255, 255, 255);
     margin-left: 10px;
     height: 40px;
 }
 #encabezado h2 {
     font-family: 'Rubik', sans-serif;
     margin-right: 20px;
+    padding: 4px 2px 2px 2px;
 }
 #encabezado a:hover {
-    color: rgb(255, 255, 228);
+    color: rgb(175, 119, 45);
 }
 h2 a{
-    color: rgb(26, 22, 14);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 25px;
 }
@@ -63,19 +64,25 @@ h2 a{
     grid-auto-rows: auto; */
 }
 
-
+main{
+    font-family: 'Rubik', sans-serif;
+}
+h3 {
+    font-size: 24px;
+    padding-bottom: 8px;
+}
 .calendario {
-    width: 160px;
-    height: 160px;
+    width: 60px;
+    height: 60px;
 }
 .cupcake {
-    width: 230px;
-    height: 160px;
-    /* margin-left: 80px; */
+    width: 40px;
+    height: 60px;
 }
 .reloj {
-    width: 150px;
-    height: 150px;
+    width: 50px;
+    height: 50px;
+    padding-top: 160px;
 }
 #grilla {
     display: grid;
@@ -83,7 +90,7 @@ h2 a{
     "container imagenes"
     "container imagenes"
     "adquiere adquiere";
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 80% 20%;
     grid-template-rows: auto 500px;
 }
 section#container {
@@ -101,9 +108,35 @@ aside#imagenes {
     grid-area: imagenes;
     display: flex;
     flex-direction: column;
-    padding-left: 55px;
+    padding-left: 15px;
 }
-
+#container {
+    padding-left: 15px;
+}
+span {
+    font-size: 20px;
+    padding: 4px 0px 12px 0px;
+}
+.frase {
+    font-family: 'Caveat', cursive;
+    padding: 4px 0px 4px 18px;
+}
+iframe {
+    width: 100%;
+}
+#adquiere .button {
+    margin-left: 35%;
+    padding: 20px;
+    width: 160px;
+    background-color: rgb(8, 8, 8);
+    color: rgb(252, 233, 172);
+    font-size: 15px;
+    border-radius: 12px;
+}
+.adquiere {
+    text-align: center;
+    width: 90%;
+}
 
 
 
@@ -115,6 +148,7 @@ aside#imagenes {
     color: rgb(219, 193, 138);
     font-size: 22px;
     font-family: 'Rubik', sans-serif;
+    width: auto;
 }
 .contacto li a {
     font-size: 20px;
@@ -133,7 +167,6 @@ aside#imagenes {
         float: left;
         font-family: 'Rubik', sans-serif;
         font-size: 35px;
-        color: rgb(26, 22, 14);
         margin-left: 10px;
     }
     #encabezado img {
@@ -144,6 +177,7 @@ aside#imagenes {
         float: right;
         margin-right: 20px;
         margin-top: 10px;
+        padding: 0px 0px 0px 0px;
     }
     #encabezado {
         display: inline;
@@ -155,7 +189,125 @@ aside#imagenes {
     display: flex;
     flex-direction: column;
     font-family: 'Rubik', sans-serif;
+    }
+    h3 {
+    font-size: 25px;
+    margin-left: 44px;
+    margin-bottom: 12px;
+    }
+    span {
+    margin-left: 40px; 
+    font-size: 20px;
+    }
+    p {
+    margin: 12px 10px 12px 20px;
+    }
+    .frase {
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+    margin: 10px 0px 10px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    }
+    .bold {
+        font-weight: bold;
+    }
+    .adquiere {
+        font-size: 25px;
+        margin-left: 8%;
+        text-align: center;
+        width: 700px;
+    }
+    iframe {
+        margin-left: 8%;
+        width: 700px;
+        height: 500px;
+    }
+    .calendario {
+        width: 80px;
+        height: 80px;
+    }
+    .cupcake {
+        width: 70px;
+        height: 80px;
+    }
+    .reloj {
+        width: 70px;
+        height: 70px;
+    }
+    .ahorra {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    .ahorra span {
+        text-align: center;
+    }
+    .ahorra img {
+        margin-left: 130px;
+    }
+    #adquiere .button {
+        margin-left: 41%;
+        padding: 20px;
+        width: 160px;
+        background-color: rgb(8, 8, 8);
+        color: rgb(252, 233, 172);
+        font-size: 15px;
+        border-radius: 12px;
+        font-size: 20px;
+    }
+    aside img {
+        margin-left: 40px;
+    }
+    .contacto {
+        height: 140px;
+        padding: 18px;
+    }
+    .contacto span {
+        display: block;
+        font-size: 26px;
+    }
+    .contacto ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        margin-top: 30px; 
+        font-size: 22px;
+    }
 }
+@media (min-width: 1200px) {
+    header {
+        height: 120px;
+    }
+    h1 {
+        float: left;
+        font-family: 'Rubik', sans-serif;
+        font-size: 35px;
+        margin-left: 10px;
+    }
+    #encabezado img {
+        display: block;
+    }
+    #encabezado h2{
+        font-family: 'Rubik', sans-serif;
+        float: right;
+        margin-right: 20px;
+        margin-top: 10px;
+        padding: 0px 0px 0px 0px;
+    }
+    #encabezado {
+        display: inline;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: normal;
+    }
+    main {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+    }
     h3 {
     font-size: 25px;
     margin-left: 44px;
@@ -182,11 +334,13 @@ aside#imagenes {
     }
     .adquiere {
         font-size: 25px;
-        margin-left: 80px;
+        margin-left: 50px;
         text-align: center;
     }
     iframe {
-        margin-left: 30%;
+        margin-left: 10%;
+        width: 1100px;
+        height: 500px;
     }
     .calendario {
         width: 160px;
@@ -218,6 +372,7 @@ aside#imagenes {
         color: rgb(252, 233, 172);
         font-size: 15px;
         border-radius: 12px;
+        font-size: 20px;
     }
     aside img {
         margin-left: 40px;
@@ -238,7 +393,6 @@ aside#imagenes {
         margin-top: 30px; 
         font-size: 22px;
     }
-}
-@media (min-width: 1200px) {
     
+
 }
