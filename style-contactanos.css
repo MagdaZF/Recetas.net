@@ -5,6 +5,8 @@
 body {
     background-color: rgb(236, 187, 126);
     background-image: url(./img/tendencias-recetas-destacada.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 header {
     background-color: rgba(8, 8, 8);
