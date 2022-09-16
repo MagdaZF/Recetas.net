@@ -4,6 +4,7 @@
 }
 body {
     background-color: rgb(236, 187, 126);
+    background-image: url(./img/tendencias-recetas-destacada.jpg);
 }
 header {
     background-color: rgba(8, 8, 8);
