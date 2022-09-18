@@ -199,6 +199,9 @@ h3 {
     color: peru;
     text-decoration: none;
 }
+footer a {
+    color: rgb(219, 193, 138);
+}
 
 @media (min-width: 768px) {
     .mas-vistas {

@@ -119,7 +119,9 @@ a {
     color: peru;
     text-decoration: none;
 }
-
+footer a {
+    color: rgb(219, 193, 138);
+}
 
 
 

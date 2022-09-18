@@ -71,7 +71,7 @@ h2 a {
     background-color: rgb(247, 234, 199);
     border-radius: 18px;
     height: 500px;
-    width: 430px;
+    width: 424px;
     padding-left: 30px;
     padding-top: 20px;
     box-shadow: 0px 0px 10px 0px #333;
@@ -80,7 +80,7 @@ form > div {
     margin-top: 8px;
 }
 form input:nth-child(1) {
-    margin-left: 200px;
+    margin-left: 182px;
 }
 .button {
     background-color: rgb(8, 8, 8);
@@ -129,15 +129,15 @@ textarea {
 }
 
 
-.contactanos a:visited {
-    color:darkred;
-}
+
 iframe {
     margin-top: 30px;
     margin-left: 35px;
     z-index: 0;
 }
-
+footer a {
+    color: rgb(219, 193, 138);
+}
 
 
 
