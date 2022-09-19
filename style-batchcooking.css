@@ -365,7 +365,7 @@ footer a {
     }
     .adquiere {
         font-size: 25px;
-        margin-left: 50px;
+        margin:auto;
         text-align: center;
     }
     iframe {
@@ -431,6 +431,7 @@ footer a {
         height: 120px;
     }
     .titulo-footer {
-        padding: 8px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        font-size: 22px; 
     }
 }

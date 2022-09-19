@@ -216,5 +216,6 @@ footer a {
     }
     .titulo-footer {
         padding: 8px 0px 0px 0px;
+        font-size: 22px; 
     }
 }
