@@ -4,7 +4,7 @@
 }
 body {
     background-color: rgb(236, 187, 126);
-    background-image: url(./img/tendencias-recetas-destacada.jpg);
+    /* background-image: url(./img/tendencias-recetas-destacada.jpg); */
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -56,7 +56,7 @@ h2 a {
 .fondo {
     background-color: rgb(8, 8, 8);
     width: 100%;
-    height: 100px;
+    height: 120px;
 }
 .imagen-ppal img {
     object-fit: cover;
@@ -110,21 +110,19 @@ textarea {
 }
 
 
-.contacto {
+footer {
     text-align: center;
     background-color: rgb(8, 8, 8);
     color: rgb(219, 193, 138);
     font-size: 22px;
     font-family: 'Rubik', sans-serif;
     display: block;
-    width: 768px;
+}
+.titulo-footer {
+    padding: 8px 0px 20px 0px;
 }
 .contacto li a {
-    font-size: 20px;
     font-family: 'Rubik', sans-serif;
-}
-.contacto li a {
-    color: peru;
     text-decoration: none;
 }
 
@@ -138,11 +136,23 @@ iframe {
 footer a {
     color: rgb(219, 193, 138);
 }
+.iconos {
+    display: flexbox;
+    text-align: none;
+    flex-direction: row;
+    margin: 50px;
+    text-decoration: none;
+}
+.divisor {
+    visibility: hidden;
+}
 .copyright {
     color: rgb(219, 193, 138);
-    background-color: black;
     display: flex;
     justify-content: end;
+    font-size: 14px;
+    margin-right: 8px;
+    margin-top: 18px;
 }
 
 
@@ -189,14 +199,21 @@ footer a {
         flex-wrap: nowrap;
         align-content: normal;
     }
-    .contacto {
-        width: 100%;
+    iframe {
+        height: 400px;
+        width: 400px;
     }
     .contacto {
         height: 140px;
         padding: 18px;
     }
-    .contacto span {
+    .iconos {
+        text-align: none;
+        flex-direction: none;
+        margin: 0px;
+        text-decoration: none;
+    }
+    .titulo-footer {
         display: block;
         font-size: 26px;
     }
@@ -207,6 +224,12 @@ footer a {
         list-style: none;
         margin-top: 30px; 
         font-size: 22px;
+    }
+    .divisor {
+        visibility: visible;
+    }
+    .copyright {
+        margin-top: 0px;
     }
 }
 
@@ -231,5 +254,8 @@ footer a {
         object-fit: cover;
         width: 100%;
         height: 350px;
+    }
+    .titulo-footer {
+        padding: 0px 0px 0px 0px;
     }
 }

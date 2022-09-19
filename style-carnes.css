@@ -104,7 +104,7 @@ a {
 
 
 
-.contacto {
+footer {
     text-align: center;
     background-color: rgb(8, 8, 8);
     color: rgb(219, 193, 138);
@@ -112,21 +112,32 @@ a {
     font-family: 'Rubik', sans-serif;
 }
 .contacto li a {
-    font-size: 20px;
     font-family: 'Rubik', sans-serif;
-}
-.contacto li a {
-    color: peru;
     text-decoration: none;
+}
+.titulo-footer {
+    padding: 8px 0px 20px 0px;
 }
 footer a {
     color: rgb(219, 193, 138);
 }
+.iconos {
+    display: flexbox;
+    text-align: none;
+    flex-direction: row;
+    margin: 50px;
+    text-decoration: none;
+}
+.divisor {
+    visibility: hidden;
+}
 .copyright {
     color: rgb(219, 193, 138);
-    background-color: black;
     display: flex;
     justify-content: end;
+    font-size: 14px;
+    margin-right: 8px;
+    margin-top: 18px;
 }
 
 
@@ -171,7 +182,13 @@ footer a {
         height: 140px;
         padding: 18px;
     }
-    .contacto span {
+    .iconos {
+        text-align: none;
+        flex-direction: none;
+        margin: 0px;
+        text-decoration: none;
+    }
+    .titulo-footer {
         display: block;
         font-size: 26px;
     }
@@ -182,5 +199,16 @@ footer a {
         list-style: none;
         margin-top: 30px; 
         font-size: 22px;
+    }
+    .divisor {
+        visibility: visible;
+    }
+    .copyright {
+        margin-top: 0px;
+    }
+}
+@media (min-width: 1200px) {
+    .titulo-footer {
+        padding: 0px 0px 0px 0px;
     }
 }
