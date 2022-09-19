@@ -177,6 +177,10 @@ footer a {
         height: 140px;
         padding: 18px;
     }
+    .titulo-footer {
+        padding: 8px 0px 20px 0px;
+        font-size: 26px;
+    }
     .iconos {
         text-align: none;
         flex-direction: none;
@@ -207,7 +211,10 @@ footer a {
     .formulario {
         margin-top: 50px;
     }
+    .contacto {
+        height: 120px;
+    }
     .titulo-footer {
-        padding: 0px 0px 0px 0px;
+        padding: 8px 0px 0px 0px;
     }
 }

@@ -179,7 +179,7 @@ footer a {
         align-content: normal;
     }
     .contacto {
-        height: 140px;
+        height: 130px;
         padding: 18px;
     }
     .iconos {
@@ -208,7 +208,10 @@ footer a {
     }
 }
 @media (min-width: 1200px) {
+    .contacto {
+        height: 120px;
+    }
     .titulo-footer {
-        padding: 0px 0px 0px 0px;
+        padding: 8px 0px 0px 0px;
     }
 }

@@ -320,4 +320,14 @@ footer a {
     .cursos {
         height: 500px;
     }
+    .titulo-footer {
+        font-size: 22px;
+        
+    }
+    .contacto {
+        height: 120px;
+    }
+    .titulo-footer {
+        padding: 8px 0px 0px 0px;
+    }
 }

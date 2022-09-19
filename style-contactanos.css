@@ -204,7 +204,7 @@ footer a {
         width: 400px;
     }
     .contacto {
-        height: 140px;
+        height: 130px;
         padding: 18px;
     }
     .iconos {
@@ -255,7 +255,10 @@ footer a {
         width: 100%;
         height: 350px;
     }
+    .contacto {
+        height: 120px;
+    }
     .titulo-footer {
-        padding: 0px 0px 0px 0px;
+        padding: 8px 0px 0px 0px;
     }
 }

@@ -409,7 +409,7 @@ footer a {
         margin-left: 40px;
     }
     .contacto {
-        height: 140px;
+        height: 130px;
         padding: 18px;
     }
     .contacto span {
@@ -427,7 +427,10 @@ footer a {
     .copyright {
         margin-top: 0px;
     }
+    .contacto {
+        height: 120px;
+    }
     .titulo-footer {
-        padding: 0px 0px 0px 0px;
+        padding: 8px 0px 0px 0px;
     }
 }
