@@ -202,6 +202,13 @@ h3 {
 footer a {
     color: rgb(219, 193, 138);
 }
+.copyright {
+    color: rgb(219, 193, 138);
+    background-color: black;
+    display: flex;
+    justify-content: end;
+}
+
 
 @media (min-width: 768px) {
     .mas-vistas {
