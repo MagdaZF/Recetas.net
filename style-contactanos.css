@@ -79,6 +79,11 @@ h2 a {
 form > div {
     margin-top: 8px;
 }
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
 form input:nth-child(1) {
     margin-left: 182px;
 }
