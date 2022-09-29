@@ -82,7 +82,7 @@ form > div {
 .flex {
     display: flex;
     justify-content: space-between;
-    margin-right: 30px;
+    margin-right: 150px;
 }
 form input:nth-child(1) {
     margin-left: 182px;
