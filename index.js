@@ -6,15 +6,15 @@ let usuarios =["usuario1", "usuario2", "usuario3", "usuario4"];
 let contraseña = [123, 456, 789, 0123];
 
 function pedirElUsuario (){
-	let pedirUsuario = prompt("Regístrese en nuestra página! \n Ingrese su usuario: ");
-	/* console.log(usuarios); */
+	let pedirUsuario = prompt("Regístrese en nuestra página! \n Ingrese su usuario: "); 
+	/* console.log(usuarios);  */
 	while (usuarios.includes(pedirUsuario)){
 		pedirUsuario = prompt("Usuario ya registrado. \n Ingrese otro usuario: ");	
 	}
 	usuarios.push(pedirUsuario);
 	alert("Bienvenido/a " + pedirUsuario)
 }
-pedirElUsuario ();
+pedirElUsuario (); 
 
 
 let pedirContraseña = prompt("Ingrese su contraseña: ");
@@ -50,43 +50,74 @@ for (let i = 0; i < edades.length; i++){
 }
 /* console.log(cantidadEdades); */
 let edadPromedio = sumaEdades/(cantidadEdades);
-console.log("La edad promedio de las personas ingresadas es de: "+ edadPromedio); 
+console.log("La edad promedio de las personas ingresadas es de: "+ Math.round(edadPromedio,2));  
 /* console.log(edades); */
 /* localStorage.clear(); */
 
 
 
-/* let pedirPreferencias = prompt("Ingrese las recetas que le gustarían ver: \n (1)Carnes  (2)Postres (3)Sopas y Guisos (4)Panificación (5)Sin TACC (6)Vegano y Vegetariano");
+let pedirPreferencias = parseInt(prompt("Ingrese las recetas que le gustarían ver: \n (1)Carnes  (2)Postres (3)Sopas y Guisos (4)Panificación (5)Sin TACC (6)Vegano y Vegetariano"));
 while (pedirPreferencias > 6 || pedirPreferencias < 0){
 	alert("Valor ingresado incorrecto");
 	pedirPreferencias = prompt("Ingrese las recetas que le gustarían ver: \n (1)Carnes  (2)Postres (3)Sopas y Guisos (4)Panificación (5)Sin TACC (6)Vegano y Vegetariano");
 }
-let preferencias = []
-preferencias = [localStorage.getItem("pref")];
 
-/* preferencias.push(pedirPreferencias) */
+pedirPreferencias = [pedirPreferencias]
+let preferencias = pedirPreferencias.concat(JSON.parse(localStorage.getItem("listaPreferencia")));
 
-/*localStorage.setItem("pref", toString(pedirPreferencias));
-let preferencia1 = preferencias.filter(elemento => elemento == 1);
-porcPref1 = preferencia1.length/preferencias.length;
-let preferencia2 = preferencias.filter(elemento => elemento == 2);
-porcPref2 = preferencia2.length/preferencias.length;
-let preferencia3 = preferencias.filter(elemento => elemento == 3);
-porcPref3 = preferencia3.length/preferencias.length;
-let preferencia4 = preferencias.filter(elemento => elemento == 4);
-porcPref4 = preferencia4.length/preferencias.length;
-let preferencia5 = preferencias.filter(elemento => elemento == 5);
-porcPref5 = preferencia5.length/preferencias.length;
-let preferencia6 = preferencias.filter(elemento => elemento == 6);
-porcPref6 = preferencia6.length/preferencias.length;
+const guardarPreferencias = (clave, valor) => { localStorage.setItem(clave, valor) };
+guardarPreferencias("listaPreferencia", JSON.stringify(preferencias)) 
+
+pref1 = 0;
+pref2 = 0;
+pref3 = 0;
+pref4 = 0;
+pref5 = 0;
+pref6 = 0;
 
 
+for (i = 0; i<preferencias.length; i++){
+	switch(preferencias[i]){
+		case 1:
+			pref1 = pref1 + 1;
+			break
+		case 2:
+			pref2 = pref2 + 1;
+			break
+		case 3:
+			pref3 = pref3 + 1;
+			break
+		case 4:
+			pref4 = pref4 + 1;
+			break
+		case 5:
+			pref5 = pref5 + 1;
+			break
+		case 6:
+			pref6 = pref6 + 1;
+			break
+}
+}
+
+cantidadPreferencias = 0;
+for (let i = 0; i < preferencias.length; i++){
+	if (typeof preferencias[i] == "number"){
+		cantidadPreferencias = cantidadPreferencias +1;
+	}
+}
+porcPref1 = (pref1/cantidadPreferencias)*100;
+porcPref2 = (pref2/cantidadPreferencias)*100;
+porcPref3 = (pref3/cantidadPreferencias)*100;
+porcPref4 = (pref4/cantidadPreferencias)*100;
+porcPref5 = (pref5/cantidadPreferencias)*100;
+porcPref6 = (pref6/cantidadPreferencias)*100;
 
 
-console.log("Las preferencias de recetas de los usuarios fueron: \n (1)Carnes: " + porcPref1 + "\n (2)Postres: " + porcPref2 + "\n (3)Sopas y Guisos: " + porcPref3 +"\n (4)Panificación: " +porcPref4 + "\n (5)Sin TACC: " +porcPref5 +"\n (6)Vegano y Vegetariano): " +porcPref6);
- */
 
+console.log("Las preferencias de recetas de los usuarios fueron: \n (1)Carnes: " +  Math.round(porcPref1,2) + " %"+ "\n (2)Postres: " +  Math.round(porcPref2,2) + " %"+ "\n (3)Sopas y Guisos: " +  Math.round(porcPref3,2) + " %"+"\n (4)Panificación: " + Math.round(porcPref4,2) + " %"+ "\n (5)Sin TACC: " + Math.round(porcPref5,2) + " %"+"\n (6)Vegano y Vegetariano): " + Math.round(porcPref6,2) + " %");
 
+/* localStorage.removeItem("listaPreferencia"); */
+/* localStorage.clear(); */
 
 /* ---- Ingresar ---- */
 /* class Usuario {
