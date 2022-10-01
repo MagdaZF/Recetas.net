@@ -1,16 +1,21 @@
 
 
 /* ----Registrarse---- */
+/* ---- datos de prueba ---*/
 let usuarios =["usuario1", "usuario2", "usuario3", "usuario4"];
 let contraseña = [123, 456, 789, 0123];
-let pedirUsuario = prompt("Regístrese en nuestra página! \n Ingrese su usuario: ");
 
-console.log(usuarios);
-
-while (usuarios.includes(pedirUsuario)){
-	pedirUsuario = prompt("Usuario ya registrado. \n Ingrese otro usuario: ");	
+function pedirElUsuario (){
+	let pedirUsuario = prompt("Regístrese en nuestra página! \n Ingrese su usuario: ");
+	/* console.log(usuarios); */
+	while (usuarios.includes(pedirUsuario)){
+		pedirUsuario = prompt("Usuario ya registrado. \n Ingrese otro usuario: ");	
+	}
+	usuarios.push(pedirUsuario);
+	alert("Bienvenido/a " + pedirUsuario)
 }
-usuarios.push(pedirUsuario);
+pedirElUsuario ();
+
 
 let pedirContraseña = prompt("Ingrese su contraseña: ");
 let pedirContraseña2 = prompt("Ingrese su contraseña nuevamente: ");
@@ -46,7 +51,7 @@ for (let i = 0; i < edades.length; i++){
 /* console.log(cantidadEdades); */
 let edadPromedio = sumaEdades/(cantidadEdades);
 console.log("La edad promedio de las personas ingresadas es de: "+ edadPromedio); 
-console.log(edades);
+/* console.log(edades); */
 /* localStorage.clear(); */
 
 
@@ -83,7 +88,7 @@ console.log("Las preferencias de recetas de los usuarios fueron: \n (1)Carnes: "
 
 
 
-
+/* ---- Ingresar ---- */
 /* class Usuario {
 	constructor(usuario, contraseña, edad, preferencias){
 		this.usuario = usuario;
