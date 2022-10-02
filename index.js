@@ -1,20 +1,38 @@
 
 
 /* ----Registrarse---- */
+
+/* localStorage.clear(); */
+
 /* ---- datos de prueba ---*/
-let usuarios =["usuario1", "usuario2", "usuario3", "usuario4"];
+/* let usuarios =["usuario1", "usuario2", "usuario3", "usuario4"]; */
 let contraseña = [123, 456, 789, 0123];
 
-function pedirElUsuario (){
-	let pedirUsuario = prompt("Regístrese en nuestra página! \n Ingrese su usuario: "); 
-	/* console.log(usuarios);  */
-	while (usuarios.includes(pedirUsuario)){
-		pedirUsuario = prompt("Usuario ya registrado. \n Ingrese otro usuario: ");	
-	}
-	usuarios.push(pedirUsuario);
-	alert("Bienvenido/a " + pedirUsuario)
+
+let pedirUsuario = prompt("Regístrese en nuestra página! \n Ingrese su usuario: "); 
+console.log(pedirUsuario);
+while (pedirUsuario == ""){
+	pedirUsuario = prompt("Usted no ha ingresado un usuario válido. \n por favor, ingrese su usuario: "); 
 }
-pedirElUsuario (); 
+let pedirUsuario1 = [pedirUsuario]
+if ((pedirUsuario != "") || (pedirUsuario != "null")) {
+    let usuarios = pedirUsuario1.concat(JSON.parse(localStorage.getItem("listaUsuarios")));
+    /* console.log(usuarios);  */
+    const guardarUsuarios = (clave, valor) => { localStorage.setItem(clave, valor) };
+    guardarUsuarios("listaUsuarios", JSON.stringify(usuarios)) 
+
+    /* console.log(usuarios.includes(pedirUsuario)); */
+
+    while (usuarios.includes(pedirUsuario)){
+        pedirUsuario = prompt("Usuario ya registrado. \n Ingrese otro usuario: ");	
+    }
+}
+function limpiarUsuarios() {
+	localStorage.removeItem("listaUsuarios")
+};
+/* limpiarUsuarios (); */
+alert("Bienvenido/a " + pedirUsuario)
+
 
 
 let pedirContraseña = prompt("Ingrese su contraseña: ");
