@@ -2,7 +2,12 @@
 
 /* ----Registrarse---- */
 
-/* localStorage.clear(); */
+/* Función limpiar datos */
+function limpiarTodo() {
+	localStorage.clear();
+};
+/* limpiarTodo (); */
+
 
 /* ---- datos de prueba ---*/
 /* let usuarios =["usuario1", "usuario2", "usuario3", "usuario4"]; */
