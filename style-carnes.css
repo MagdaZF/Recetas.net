@@ -41,7 +41,7 @@ body{margin:0;padding:0;}
     background-color:none;
 }
 ._layer{
-	background:#333333;
+	background:rgb(255, 255, 255);
 	margin-bottom:4px;
 	border-radius:2px;
 	width:28px;
