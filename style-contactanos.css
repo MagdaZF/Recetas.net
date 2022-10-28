@@ -70,7 +70,7 @@ h2 a {
     margin-left: 17px;
     background-color: rgb(247, 234, 199);
     border-radius: 18px;
-    height: 550px;
+    height: 510px;
     width: 424px;
     padding-left: 30px;
     padding-top: 20px;
@@ -88,6 +88,16 @@ form input:nth-child(1) {
     margin-left: 182px;
 }
 .button {
+    background-color: rgb(8, 8, 8);
+    color: aliceblue;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    width: auto;
+    height: 35px;
+    border-radius: 4px;
+    padding-right: 4px;
+}
+button {
     background-color: rgb(8, 8, 8);
     color: aliceblue;
     font-size: 16px;
