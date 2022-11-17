@@ -67,7 +67,10 @@ h2 a{
 main{
     font-family: 'Rubik', sans-serif;
 }
-
+#cursos {
+    background-color: rgb(252, 233, 172);
+    padding-top: 20px;
+}
 
 .cursosDescr{
     font-family: 'Rubik', sans-serif;
@@ -77,7 +80,7 @@ main{
 .cursosDatos{
     font-family: 'Rubik', sans-serif;
     font-size: 15px;
-    margin-left: 60px;
+    margin-left: 80px;
 }
 
 
@@ -206,10 +209,20 @@ footer a {
         align-content: normal;
     }
     main {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Rubik', sans-serif;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Rubik', sans-serif;
     }
+    /* .imagenes {
+        width: 200px;
+        height: 200px;
+        margin-left: 10%;
+        border-radius: 12px;
+    }
+    .imagenes, .p {
+        display: block;
+    } *
+
     .contacto {
         height: 130px;
         padding: 18px;
