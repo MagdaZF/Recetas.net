@@ -66,11 +66,11 @@ h2 a{
 
 .receta {
     font-family: 'Rubik', sans-serif;
-    margin-left: 55px;
+    margin-left: 56px;
     background-color: rgb(252, 233, 172);
     border-radius: 16px;
     padding: 12px 24px;
-    margin-right: 20px;
+    margin-right: 56px;
 }
 .receta ul li{
     margin-left: 35px;
