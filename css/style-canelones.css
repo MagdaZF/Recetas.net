@@ -1,0 +1,253 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    cursor: pointer;
+}
+body {
+    background-color: rgb(236, 187, 126);
+    height: auto;
+}
+header {
+    background-color: rgba(8, 8, 8);
+    padding-left: 10px;  
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0px 0px 15px 0px #333;
+}
+header a img {
+    display: flex;
+    align-items: left;
+}
+h1 {
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    height: 40px;
+}
+#encabezado h2 {
+    font-family: 'Rubik', sans-serif;
+    margin-right: 20px;
+    padding: 4px 2px 2px 2px;
+}
+#encabezado a:hover {
+    color: rgb(175, 119, 45);
+}
+h2 a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 25px;
+}
+#encabezado {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+#encabezado img {
+    width: 80px;
+    height: 80px;
+    margin-left: 75px;
+}
+.fondo {
+    background-color: rgb(8, 8, 8);
+    width: 100%;
+    height: 120px;
+}
+.border {
+    background-color: rgb(252, 233, 172);
+    /* grid-template-columns: 70% 30%;
+    grid-auto-rows: auto; */
+}
+
+.receta {
+    font-family: 'Rubik', sans-serif;
+    margin-left: 55px;
+    background-color: rgb(252, 233, 172);
+    border-radius: 16px;
+    padding: 12px 24px;
+    margin-right: 20px;
+}
+.receta ul li{
+    margin-left: 35px;
+}
+.receta img {
+    height: 400px;
+    width: 600px;
+    margin-left: 25%;
+    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.cursosDescr{
+    font-family: 'Rubik', sans-serif;
+    margin-left: 40px;
+    font-size: 18px;
+}
+.cursosDatos{
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    margin-left: 60px;
+}
+
+
+footer {
+    text-align: center;
+    background-color: rgb(8, 8, 8);
+    color: rgb(219, 193, 138);
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+    width: auto;
+}
+.contacto li a {
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+}
+.titulo-footer {
+    padding: 8px 0px 20px 0px;
+}
+footer a {
+    color: rgb(219, 193, 138);
+}
+.iconos {
+    display: flexbox;
+    text-align: none;
+    flex-direction: row;
+    margin: 50px;
+    text-decoration: none;
+}
+.divisor {
+    visibility: hidden;
+}
+.copyright {
+    color: rgb(219, 193, 138);
+    display: flex;
+    justify-content: end;
+    font-size: 14px;
+    margin-right: 8px;
+    margin-top: 18px;
+}
+
+
+
+
+@media (min-width: 768px) {
+    header {
+        height: 120px;
+    }
+    h1 {
+        float: left;
+        font-family: 'Rubik', sans-serif;
+        font-size: 35px;
+        margin-left: 10px;
+    }
+    #encabezado img {
+        display: block;
+    }
+    #encabezado h2{
+        font-family: 'Rubik', sans-serif;
+        float: right;
+        margin-right: 20px;
+        margin-top: 10px;
+        padding: 0px 0px 0px 0px;
+    }
+    #encabezado {
+        display: inline;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: normal;
+    }
+    main {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+    }
+    .contacto {
+        height: 140px;
+        padding: 18px;
+    }
+    .iconos {
+        /* display: none; */
+        text-align: none;
+        flex-direction: none;
+        margin: 0px;
+        text-decoration: none;
+    }
+    .titulo-footer {
+        display: block;
+        font-size: 26px;
+    }
+    .contacto ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        margin-top: 30px; 
+        font-size: 22px;
+    }
+    .divisor {
+        visibility: visible;
+    }
+}
+@media (min-width: 1200px) {
+    header {
+        height: 120px;
+    }
+    h1 {
+        float: left;
+        font-family: 'Rubik', sans-serif;
+        font-size: 35px;
+        margin-left: 10px;
+    }
+    #encabezado img {
+        display: block;
+    }
+    #encabezado h2{
+        font-family: 'Rubik', sans-serif;
+        float: right;
+        margin-right: 20px;
+        margin-top: 10px;
+        padding: 0px 0px 0px 0px;
+    }
+    #encabezado {
+        display: inline;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: normal;
+    }
+    main {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+    }
+    .contacto {
+        height: 130px;
+        padding: 18px;
+    }
+    .contacto span {
+        display: block;
+        font-size: 26px;
+    }
+    .contacto ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        margin-top: 30px; 
+        font-size: 22px;
+    }
+    .copyright {
+        margin-top: 0px;
+    }
+    .contacto {
+        height: 120px;
+    }
+    .titulo-footer {
+        padding: 0px 0px 0px 0px;
+        font-size: 22px; 
+    }
+}
