@@ -75,12 +75,21 @@ h2 a{
 .receta ul li{
     margin-left: 35px;
 }
+.receta ul li {
+    text-decoration: none;
+}
+
+
 .receta img {
-    height: 400px;
-    width: 600px;
-    margin-left: 25%;
+    height: 150px;
+    width: 200px;
+    margin-left: 20%;
     box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+}
+[type="checkbox"]:checked + label {
+    background-color: rgb(241, 193, 129);
+    border-radius: 4px;
 }
 
 .cursosDescr{
@@ -161,10 +170,12 @@ footer a {
         flex-wrap: nowrap;
         align-content: normal;
     }
-    main {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Rubik', sans-serif;
+    .receta img {
+        height: 350px;
+        width: 500px;
+        margin-left: 15%;
+        box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
     }
     .contacto {
         height: 140px;
@@ -219,10 +230,12 @@ footer a {
         flex-wrap: nowrap;
         align-content: normal;
     }
-    main {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Rubik', sans-serif;
+    .receta img {
+        height: 400px;
+        width: 600px;
+        margin-left: 25%;
+        box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
     }
     .contacto {
         height: 130px;

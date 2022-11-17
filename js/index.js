@@ -13,9 +13,9 @@ function limpiarTodo() {
 /* let usuarios =["usuario1", "usuario2", "usuario3", "usuario4"]; */
 let contraseña = [123, 456, 789, 0123];
 
-let deseaRegistrarse = prompt("¿Desea registrarse en nustra página?(s/n): ")
+let deseaRegistrarse = prompt("¿Desea registrarse en nustra página?: ")
 let deseaRegistrarseLower = deseaRegistrarse.toLowerCase()
-if (deseaRegistrarseLower == "s") {
+if (deseaRegistrarseLower == "s"|| deseaRegistrarse == "si") {
 
 	let pedirUsuario = prompt("Regístrese en nuestra página! \n Ingrese su usuario: "); 
 	console.log(pedirUsuario);
